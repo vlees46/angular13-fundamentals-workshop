@@ -34,7 +34,11 @@
       <mat-card>
         <mat-card-header>
           <mat-card-title>
-            Select Course
+            <span *ngIf="selectedCourse.id; else elseBlock">
+              {{selectCourse.title | titlecase}}        
+            
+            </span>
+            
           </mat-card-title>
         </mat-card-header>
         <mat-card-content>
