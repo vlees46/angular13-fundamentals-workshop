@@ -5,6 +5,12 @@ In the `src/app/courses/courses.component.ts` file, complete the following chall
 - Add event handler to select course
 - Display raw JSON of selected course
 
+In the `src/app/home/home.component.html` file, complete the follow challenges.
+- Display lesson using `ngFor`
+- Add event handler to select lesson
+- Display raw JSON of selected lesson
+
+
 # Module 02: Form Challenges
 In the `src/app/courses/courses.component.ts` file, complete the following challenges.
 - Update the form to show `percentComplete`
