@@ -50,10 +50,10 @@ selectedCourse = emptyCourse;
   }
   deleteCourse(courseId){
   console.log('DELETE COURSE', courseId);
-
+  }
+  
   reset(){
-    this.selectCourse({...emptyCourse})
+    this.selectCourse({...emptyCourse});
   }
 
-  }
 }
