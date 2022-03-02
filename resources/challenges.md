@@ -11,7 +11,7 @@ In the `src/app/home/home.component.html` file, complete the follow challenges.
 - Display raw JSON of selected lesson
 -BONUS: How can we edit a course without affecting the other representations?
 **HINT:** `https://material.angular.io/components/slider/overview`
-`https://material.angular.io/components/checkbox/overview`
+**HINT:** `https://material.angular.io/components/checkbox/overview`
 
 
 # Module 02: Form Challenges
