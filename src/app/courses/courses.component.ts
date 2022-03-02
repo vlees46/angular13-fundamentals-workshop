@@ -1,5 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { resetFakeAsyncZone } from '@angular/core/testing';
+import { Course } from '../common/models/course';
 
+const emptyCourse: Course = {
+  id: null,
+  title: '',
+  description: '',
+  percentComplete: 0,
+  favorite: false
+
+
+}
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
@@ -26,18 +37,23 @@ export class CoursesComponent implements OnInit {
       favorite: true
     }
   ];
-selectedCourse= null;
+selectedCourse = emptyCourse;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+  
 
   selectCourse(course){
     this.selectedCourse = course;
   }
   deleteCourse(courseId){
-  console.log('DELTE COURSE', courseId);
+  console.log('DELETE COURSE', courseId);
 
+  reset(){
+    this.selectCourse({...emptyCourse})
+  }
 
   }
 }
