@@ -33,7 +33,7 @@ export class CoursesComponent implements OnInit {
       id: 2,
       title: 'Javascript is the hardest part',
       description: 'Learn the fundamentals of Javascript',
-      percentComplete: 26,
+      percentComplete: 56,
       favorite: true
     }
   ];
@@ -51,7 +51,7 @@ selectedCourse = emptyCourse;
   deleteCourse(courseId){
   console.log('DELETE COURSE', courseId);
   }
-  
+
   reset(){
     this.selectCourse({...emptyCourse});
   }

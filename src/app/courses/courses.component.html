@@ -60,6 +60,11 @@
             name="description"
             type="text">        
           </mat-form-field>
+          <mat-slider
+            [(ngModel)] ="selectedCourse.percentComplete"
+            name="percent complete"
+            aria-labelledby="percentComplete">
+    </mat-slider>
         </mat-card-content>
         <mat-card-actions>
           <button type="button" mat-button (click)="reset()">Cancel</button>            
