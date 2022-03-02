@@ -60,11 +60,21 @@
             name="description"
             type="text">        
           </mat-form-field>
+          <div>
           <mat-slider
+            placeholder="percentComplete"
             [(ngModel)] ="selectedCourse.percentComplete"
             name="percent complete"
-            aria-labelledby="percentComplete">
-    </mat-slider>
+            aria-labelledby="percentComplete"> 
+        </mat-slider>
+      </div>
+        <div>
+          <mat-checkbox class="example-margin" 
+            [(ngModel)]="selectedCourse.favorite"
+            name="favorite"> Favorite
+          
+          </mat-checkbox>
+        </div>   
         </mat-card-content>
         <mat-card-actions>
           <button type="button" mat-button (click)="reset()">Cancel</button>            
